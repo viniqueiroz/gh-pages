@@ -521,7 +521,7 @@
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 
                   <!-- CAROUSEL  -->
-                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div id="carouselModal1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                       <div class="carousel-item active">
                         <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="First slide">
@@ -533,11 +533,11 @@
                         <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="Third slide">
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselModal1" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carouselModal1" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
@@ -579,7 +579,7 @@
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 
                   <!-- CAROUSEL  -->
-                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div id="carouselModal2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                       <div class="carousel-item active">
                         <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="First slide">
@@ -591,11 +591,11 @@
                         <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="Third slide">
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselModal2" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carouselModal2" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
@@ -758,6 +758,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.bcSwipe.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -768,6 +769,11 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+    <script type="text/JavaScript">
+    $(document).ready(function() {
+      $('.carousel').bcSwipe({ threshold: 50 });
+    });
+    </script>
 
   </body>
 
